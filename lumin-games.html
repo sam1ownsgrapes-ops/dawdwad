@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumin SDK Games</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: rgba(20, 20, 20, 0.9);
+      border-bottom: 1px solid #333;
+      backdrop-filter: blur(12px);
+    }
+    #header h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    #header span {
+      font-size: 12px;
+      color: #888;
+    }
+    #games {
+      width: 100%;
+      min-height: calc(100% - 50px);
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Lumin SDK Games</h1>
+    <span>Powered by Lumin</span>
+  </div>
+  <div id="games"></div>
+
+  <script src="https://cdn.jsdelivr.net/gh/luminsdk/script@latest/lumin.min.js"></script>
+  <script>
+    Lumin.init({
+      container: '#games',
+      theme: 'dark',
+      onReady: () => console.log('LuminSDK is ready'),
+      onError: (err) => console.error('LuminSDK error:', err),
+    });
+  </script>
+</body>
+</html>

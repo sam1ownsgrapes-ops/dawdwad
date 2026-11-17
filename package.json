@@ -1,0 +1,25 @@
+{
+  "name": "class-studys",
+  "version": "11.0.0",
+  "description": "Static SVG site",
+  "main": "index.html",
+  "unpkg": "index.html",
+  "browser": "index.html",
+  "files": [
+    "*.html",
+    "*.svg",
+    "*.js",
+    "*.css",
+    "*.json",
+    "assets/",
+    "branding/",
+    ".well-known/",
+    "jr1n9/",
+    "equ4q/"
+  ],
+  "keywords": [
+    "svg",
+    "static-site"
+  ],
+  "license": "MIT"
+}
